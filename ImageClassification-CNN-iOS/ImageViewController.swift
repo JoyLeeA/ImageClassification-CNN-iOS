@@ -272,8 +272,8 @@ class ImageViewController: UIViewController {
 
 extension ImageViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage,
-           let url = info[UIImagePickerControllerImageURL] as? URL {
+        if let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage,
+           let url = info[UIImagePickerController.InfoKey.imageURL.rawValue] as? URL {
             imagePreview.image = image
             self.predict(with: url)
         }
