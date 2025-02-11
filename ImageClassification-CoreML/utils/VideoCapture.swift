@@ -1,9 +1,9 @@
 //
 //  VideoCapture.swift
-//  Awesome ML
+//  ImageClassification-CNN-iOS
 //
-//  Created by Eugene Bokhan on 3/13/18.
-//  Copyright © 2018 Eugene Bokhan. All rights reserved.
+//  Created by 이종하 on 10/5/24.
+//  Copyright © 2024 JoyLee. All rights reserved.
 //
 
 import UIKit
@@ -21,11 +21,9 @@ public class VideoCapture: NSObject {
     
     let captureSession = AVCaptureSession()
     let videoOutput = AVCaptureVideoDataOutput()
-    let queue = DispatchQueue(label: "com.tucan9389.camera-queue")
-    
-//    var lastTimestamp = CMTime()
-    
-    public func setUp(sessionPreset: AVCaptureSession.Preset = .vga640x480,
+    let queue = DispatchQueue(label: "com.joylee.camera-queue")
+
+    func setUp(sessionPreset: AVCaptureSession.Preset = .vga640x480,
                       completion: @escaping (Bool) -> Void) {
         self.setUpCamera(sessionPreset: sessionPreset, completion: { success in
             completion(success)
@@ -66,9 +64,7 @@ public class VideoCapture: NSObject {
         if captureSession.canAddOutput(videoOutput) {
             captureSession.addOutput(videoOutput)
         }
-        
-        // We want the buffers to be in portrait orientation otherwise they are
-        // rotated by 90 degrees. Need to set this _after_ addOutput()!
+
         videoOutput.connection(with: AVMediaType.video)?.videoOrientation = .portrait
         
         captureSession.commitConfiguration()
@@ -79,7 +75,9 @@ public class VideoCapture: NSObject {
     
     public func start() {
         if !captureSession.isRunning {
-            captureSession.startRunning()
+            DispatchQueue.global(qos: .background).async { [weak self] in
+                  self?.captureSession.startRunning()
+              }
         }
     }
     
@@ -92,20 +90,9 @@ public class VideoCapture: NSObject {
 
 extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
     public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        // Because lowering the capture device's FPS looks ugly in the preview,
-        // we capture at full speed but only call the delegate at its desired
-        // framerate.
-//        let timestamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
-//        let deltaTime = timestamp - lastTimestamp
-//        if deltaTime >= CMTimeMake(1, Int32(fps)) {
-//            lastTimestamp = timestamp
             let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
-            delegate?.videoCapture(self, didCaptureVideoFrame: imageBuffer/*, timestamp: timestamp*/)
-//        }
-    }
-    
-    public func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        //print("dropped frame")
+            delegate?.videoCapture(self, didCaptureVideoFrame: imageBuffer
+            )
     }
 }
 

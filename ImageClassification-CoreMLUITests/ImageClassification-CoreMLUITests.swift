@@ -2,8 +2,8 @@
 //  MobileNetAppUITests.swift
 //  MobileNetAppUITests
 //
-//  Created by GwakDoyoung on 28/05/2018.
-//  Copyright © 2018 GwakDoyoung. All rights reserved.
+//  Created by 이종하 on 10/5/24.
+//  Copyright © 2024 JoyLee All rights reserved.
 //
 
 import XCTest

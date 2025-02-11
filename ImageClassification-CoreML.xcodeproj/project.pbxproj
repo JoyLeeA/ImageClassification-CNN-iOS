@@ -3,20 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		550AE90F221B843A0021C834 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550AE90E221B843A0021C834 /* Measure.swift */; };
 		556D1CE620BBA9FA0070537C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D1CE520BBA9FA0070537C /* AppDelegate.swift */; };
-		556D1CE820BBA9FA0070537C /* LiveImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D1CE720BBA9FA0070537C /* LiveImageViewController.swift */; };
-		556D1CEB20BBA9FA0070537C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556D1CE920BBA9FA0070537C /* Main.storyboard */; };
 		556D1CED20BBA9FC0070537C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556D1CEC20BBA9FC0070537C /* Assets.xcassets */; };
 		556D1CF020BBA9FC0070537C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556D1CEE20BBA9FC0070537C /* LaunchScreen.storyboard */; };
 		556D1CFB20BBA9FC0070537C /* ImageClassification-CoreMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D1CFA20BBA9FC0070537C /* ImageClassification-CoreMLUITests.swift */; };
 		556D1D0820BBABCC0070537C /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D1D0720BBABCC0070537C /* VideoCapture.swift */; };
 		55DF3E7321972FBF0080252C /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 55DF3E7221972FBF0080252C /* MobileNet.mlmodel */; };
-		71B831EF22E2995B00207D05 /* StillImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B831EE22E2995B00207D05 /* StillImageViewController.swift */; };
+		65FEC83A2CB0FEDF0071ED78 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 65FEC8392CB0FEDF0071ED78 /* SnapKit */; };
+		65FEC8462CB1040A0071ED78 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FEC8452CB1040A0071ED78 /* CameraViewController.swift */; };
+		65FEC8482CB1232D0071ED78 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FEC8472CB1232D0071ED78 /* ImageViewController.swift */; };
+		65FEC84A2CB13FD90071ED78 /* mobilenetV3_large.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 65FEC8492CB13FD90071ED78 /* mobilenetV3_large.mlmodel */; };
+		65FEC84C2CB147720071ED78 /* LabelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FEC84B2CB147720071ED78 /* LabelPicker.swift */; };
+		65FEC84E2CB1651E0071ED78 /* MemoryUsageMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FEC84D2CB1651E0071ED78 /* MemoryUsageMonitor.swift */; };
 		71B831F522E2A20200207D05 /* MobileNetV2Int8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 71B831F222E2A20100207D05 /* MobileNetV2Int8LUT.mlmodel */; };
 		71B831F622E2A20200207D05 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 71B831F322E2A20200207D05 /* MobileNetV2.mlmodel */; };
 		71B831F722E2A20200207D05 /* MobileNetV2FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 71B831F422E2A20200207D05 /* MobileNetV2FP16.mlmodel */; };
@@ -39,12 +42,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		65FEC8422CB1021C0071ED78 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FEC8442CB102220071ED78 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		550AE90E221B843A0021C834 /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
 		556D1CE220BBA9FA0070537C /* ImageClassification-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ImageClassification-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556D1CE520BBA9FA0070537C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		556D1CE720BBA9FA0070537C /* LiveImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveImageViewController.swift; sourceTree = "<group>"; };
-		556D1CEA20BBA9FA0070537C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		556D1CEC20BBA9FC0070537C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		556D1CEF20BBA9FC0070537C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556D1CF120BBA9FC0070537C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +77,11 @@
 		556D1CFC20BBA9FC0070537C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556D1D0720BBABCC0070537C /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		55DF3E7221972FBF0080252C /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
-		71B831EE22E2995B00207D05 /* StillImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StillImageViewController.swift; sourceTree = "<group>"; };
+		65FEC8452CB1040A0071ED78 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		65FEC8472CB1232D0071ED78 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		65FEC8492CB13FD90071ED78 /* mobilenetV3_large.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mobilenetV3_large.mlmodel; sourceTree = "<group>"; };
+		65FEC84B2CB147720071ED78 /* LabelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPicker.swift; sourceTree = "<group>"; };
+		65FEC84D2CB1651E0071ED78 /* MemoryUsageMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryUsageMonitor.swift; sourceTree = "<group>"; };
 		71B831F222E2A20100207D05 /* MobileNetV2Int8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2Int8LUT.mlmodel; sourceTree = "<group>"; };
 		71B831F322E2A20200207D05 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		71B831F422E2A20200207D05 /* MobileNetV2FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2FP16.mlmodel; sourceTree = "<group>"; };
@@ -71,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FEC83A2CB0FEDF0071ED78 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,9 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				556D1CE520BBA9FA0070537C /* AppDelegate.swift */,
-				556D1CE920BBA9FA0070537C /* Main.storyboard */,
-				556D1CE720BBA9FA0070537C /* LiveImageViewController.swift */,
-				71B831EE22E2995B00207D05 /* StillImageViewController.swift */,
+				65FEC8452CB1040A0071ED78 /* CameraViewController.swift */,
+				65FEC8472CB1232D0071ED78 /* ImageViewController.swift */,
 				71B831F922E2A22300207D05 /* utils */,
 				71B831F822E2A21100207D05 /* mlmodel */,
 				556D1CEC20BBA9FC0070537C /* Assets.xcassets */,
@@ -142,6 +170,8 @@
 			children = (
 				550AE90E221B843A0021C834 /* Measure.swift */,
 				556D1D0720BBABCC0070537C /* VideoCapture.swift */,
+				65FEC84B2CB147720071ED78 /* LabelPicker.swift */,
+				65FEC84D2CB1651E0071ED78 /* MemoryUsageMonitor.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -172,6 +202,7 @@
 			children = (
 				55DF3E7221972FBF0080252C /* MobileNet.mlmodel */,
 				71B831F322E2A20200207D05 /* MobileNetV2.mlmodel */,
+				65FEC8492CB13FD90071ED78 /* mobilenetV3_large.mlmodel */,
 				71B831F422E2A20200207D05 /* MobileNetV2FP16.mlmodel */,
 				71B831F222E2A20100207D05 /* MobileNetV2Int8LUT.mlmodel */,
 			);
@@ -188,12 +219,16 @@
 				556D1CDE20BBA9FA0070537C /* Sources */,
 				556D1CDF20BBA9FA0070537C /* Frameworks */,
 				556D1CE020BBA9FA0070537C /* Resources */,
+				65FEC8422CB1021C0071ED78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "ImageClassification-CoreML";
+			packageProductDependencies = (
+				65FEC8392CB0FEDF0071ED78 /* SnapKit */,
+			);
 			productName = MobileNetApp;
 			productReference = 556D1CE220BBA9FA0070537C /* ImageClassification-CoreML.app */;
 			productType = "com.apple.product-type.application";
@@ -205,6 +240,7 @@
 				556D1CF220BBA9FC0070537C /* Sources */,
 				556D1CF320BBA9FC0070537C /* Frameworks */,
 				556D1CF420BBA9FC0070537C /* Resources */,
+				65FEC8442CB102220071ED78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +248,8 @@
 				556D1CF820BBA9FC0070537C /* PBXTargetDependency */,
 			);
 			name = "ImageClassification-CoreMLUITests";
+			packageProductDependencies = (
+			);
 			productName = MobileNetAppUITests;
 			productReference = 556D1CF620BBA9FC0070537C /* ImageClassification-CoreMLUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +282,9 @@
 				Base,
 			);
 			mainGroup = 556D1CD920BBA9FA0070537C;
+			packageReferences = (
+				65FEC8382CB0FD510071ED78 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 556D1CE320BBA9FA0070537C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,7 +302,6 @@
 			files = (
 				556D1CF020BBA9FC0070537C /* LaunchScreen.storyboard in Resources */,
 				556D1CED20BBA9FC0070537C /* Assets.xcassets in Resources */,
-				556D1CEB20BBA9FA0070537C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,17 +322,20 @@
 				71B831F622E2A20200207D05 /* MobileNetV2.mlmodel in Sources */,
 				55DF3E7321972FBF0080252C /* MobileNet.mlmodel in Sources */,
 				71B831F522E2A20200207D05 /* MobileNetV2Int8LUT.mlmodel in Sources */,
+				65FEC8462CB1040A0071ED78 /* CameraViewController.swift in Sources */,
 				71B8320722E2A5E000207D05 /* SqueezeNet.mlmodel in Sources */,
 				71B831F722E2A20200207D05 /* MobileNetV2FP16.mlmodel in Sources */,
 				556D1D0820BBABCC0070537C /* VideoCapture.swift in Sources */,
 				71B8320422E2A5E000207D05 /* SqueezeNetFP16.mlmodel in Sources */,
 				550AE90F221B843A0021C834 /* Measure.swift in Sources */,
 				71B8320522E2A5E000207D05 /* Resnet50Headless.mlmodel in Sources */,
+				65FEC8482CB1232D0071ED78 /* ImageViewController.swift in Sources */,
+				65FEC84E2CB1651E0071ED78 /* MemoryUsageMonitor.swift in Sources */,
+				65FEC84A2CB13FD90071ED78 /* mobilenetV3_large.mlmodel in Sources */,
 				71B8320122E2A5E000207D05 /* SqueezeNetInt8LUT.mlmodel in Sources */,
 				71B8320222E2A5E000207D05 /* Resnet50Int8LUT.mlmodel in Sources */,
+				65FEC84C2CB147720071ED78 /* LabelPicker.swift in Sources */,
 				71B8320622E2A5E000207D05 /* Resnet50.mlmodel in Sources */,
-				71B831EF22E2995B00207D05 /* StillImageViewController.swift in Sources */,
-				556D1CE820BBA9FA0070537C /* LiveImageViewController.swift in Sources */,
 				556D1CE620BBA9FA0070537C /* AppDelegate.swift in Sources */,
 				71B8320322E2A5E000207D05 /* Resnet50FP16.mlmodel in Sources */,
 			);
@@ -317,14 +360,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		556D1CE920BBA9FA0070537C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				556D1CEA20BBA9FA0070537C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		556D1CEE20BBA9FC0070537C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -454,16 +489,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = P9S7UH52Q5;
 				INFOPLIST_FILE = "ImageClassification-CoreML/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.canapio.MobileNetApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cjmall.iphone-oliveyoung";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = OLIVEYOUNG_DEVELOP_2024;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -474,14 +512,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				DEVELOPMENT_TEAM = 8NK4L45774;
 				INFOPLIST_FILE = "ImageClassification-CoreML/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.canapio.MobileNetApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cjmall.iphone-oliveyoung";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,6 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
 				INFOPLIST_FILE = MobileNetAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,6 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
 				INFOPLIST_FILE = MobileNetAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65FEC8382CB0FD510071ED78 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65FEC8392CB0FEDF0071ED78 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65FEC8382CB0FD510071ED78 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 556D1CDA20BBA9FA0070537C /* Project object */;
 }

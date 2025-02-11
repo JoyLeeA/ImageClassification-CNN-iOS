@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/doyounggwak/Project/MoTLabs/github_project/ml-ios-projects/MobileNet-CoreML/ImageClassification-CoreML.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
