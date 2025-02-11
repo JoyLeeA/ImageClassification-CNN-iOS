@@ -67,12 +67,12 @@
 
 /* Begin PBXFileReference section */
 		550AE90E221B843A0021C834 /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
-		556D1CE220BBA9FA0070537C /* ImageClassification-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ImageClassification-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556D1CE220BBA9FA0070537C /* ImageClassification-CNN-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ImageClassification-CNN-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556D1CE520BBA9FA0070537C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		556D1CEC20BBA9FC0070537C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		556D1CEF20BBA9FC0070537C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556D1CF120BBA9FC0070537C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		556D1CF620BBA9FC0070537C /* ImageClassification-CoreMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImageClassification-CoreMLUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556D1CF620BBA9FC0070537C /* ImageClassification-CNN-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImageClassification-CNN-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556D1CFA20BBA9FC0070537C /* ImageClassification-CoreMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageClassification-CoreMLUITests.swift"; sourceTree = "<group>"; };
 		556D1CFC20BBA9FC0070537C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556D1D0720BBABCC0070537C /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		556D1CD920BBA9FA0070537C = {
 			isa = PBXGroup;
 			children = (
-				556D1CE420BBA9FA0070537C /* ImageClassification-CoreML */,
+				556D1CE420BBA9FA0070537C /* ImageClassification-CNN-iOS */,
 				556D1CF920BBA9FC0070537C /* ImageClassification-CoreMLUITests */,
 				556D1CE320BBA9FA0070537C /* Products */,
 			);
@@ -125,13 +125,13 @@
 		556D1CE320BBA9FA0070537C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				556D1CE220BBA9FA0070537C /* ImageClassification-CoreML.app */,
-				556D1CF620BBA9FC0070537C /* ImageClassification-CoreMLUITests.xctest */,
+				556D1CE220BBA9FA0070537C /* ImageClassification-CNN-iOS.app */,
+				556D1CF620BBA9FC0070537C /* ImageClassification-CNN-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		556D1CE420BBA9FA0070537C /* ImageClassification-CoreML */ = {
+		556D1CE420BBA9FA0070537C /* ImageClassification-CNN-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				556D1CE520BBA9FA0070537C /* AppDelegate.swift */,
@@ -143,7 +143,7 @@
 				556D1CEE20BBA9FC0070537C /* LaunchScreen.storyboard */,
 				556D1CF120BBA9FC0070537C /* Info.plist */,
 			);
-			path = "ImageClassification-CoreML";
+			path = "ImageClassification-CNN-iOS";
 			sourceTree = "<group>";
 		};
 		556D1CF920BBA9FC0070537C /* ImageClassification-CoreMLUITests */ = {
@@ -212,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		556D1CE120BBA9FA0070537C /* ImageClassification-CoreML */ = {
+		556D1CE120BBA9FA0070537C /* ImageClassification-CNN-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 556D1CFF20BBA9FC0070537C /* Build configuration list for PBXNativeTarget "ImageClassification-CoreML" */;
+			buildConfigurationList = 556D1CFF20BBA9FC0070537C /* Build configuration list for PBXNativeTarget "ImageClassification-CNN-iOS" */;
 			buildPhases = (
 				556D1CDE20BBA9FA0070537C /* Sources */,
 				556D1CDF20BBA9FA0070537C /* Frameworks */,
@@ -225,17 +225,17 @@
 			);
 			dependencies = (
 			);
-			name = "ImageClassification-CoreML";
+			name = "ImageClassification-CNN-iOS";
 			packageProductDependencies = (
 				65FEC8392CB0FEDF0071ED78 /* SnapKit */,
 			);
 			productName = MobileNetApp;
-			productReference = 556D1CE220BBA9FA0070537C /* ImageClassification-CoreML.app */;
+			productReference = 556D1CE220BBA9FA0070537C /* ImageClassification-CNN-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		556D1CF520BBA9FC0070537C /* ImageClassification-CoreMLUITests */ = {
+		556D1CF520BBA9FC0070537C /* ImageClassification-CNN-iOSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 556D1D0220BBA9FC0070537C /* Build configuration list for PBXNativeTarget "ImageClassification-CoreMLUITests" */;
+			buildConfigurationList = 556D1D0220BBA9FC0070537C /* Build configuration list for PBXNativeTarget "ImageClassification-CNN-iOSUITests" */;
 			buildPhases = (
 				556D1CF220BBA9FC0070537C /* Sources */,
 				556D1CF320BBA9FC0070537C /* Frameworks */,
@@ -247,11 +247,11 @@
 			dependencies = (
 				556D1CF820BBA9FC0070537C /* PBXTargetDependency */,
 			);
-			name = "ImageClassification-CoreMLUITests";
+			name = "ImageClassification-CNN-iOSUITests";
 			packageProductDependencies = (
 			);
 			productName = MobileNetAppUITests;
-			productReference = 556D1CF620BBA9FC0070537C /* ImageClassification-CoreMLUITests.xctest */;
+			productReference = 556D1CF620BBA9FC0070537C /* ImageClassification-CNN-iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -273,7 +273,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 556D1CDD20BBA9FA0070537C /* Build configuration list for PBXProject "ImageClassification-CoreML" */;
+			buildConfigurationList = 556D1CDD20BBA9FA0070537C /* Build configuration list for PBXProject "ImageClassification-CNN-iOS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -289,8 +289,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				556D1CE120BBA9FA0070537C /* ImageClassification-CoreML */,
-				556D1CF520BBA9FC0070537C /* ImageClassification-CoreMLUITests */,
+				556D1CE120BBA9FA0070537C /* ImageClassification-CNN-iOS */,
+				556D1CF520BBA9FC0070537C /* ImageClassification-CNN-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,7 +354,7 @@
 /* Begin PBXTargetDependency section */
 		556D1CF820BBA9FC0070537C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 556D1CE120BBA9FA0070537C /* ImageClassification-CoreML */;
+			target = 556D1CE120BBA9FA0070537C /* ImageClassification-CNN-iOS */;
 			targetProxy = 556D1CF720BBA9FC0070537C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -492,7 +492,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = P9S7UH52Q5;
-				INFOPLIST_FILE = "ImageClassification-CoreML/Info.plist";
+				INFOPLIST_FILE = "ImageClassification-CNN-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -513,7 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NK4L45774;
-				INFOPLIST_FILE = "ImageClassification-CoreML/Info.plist";
+				INFOPLIST_FILE = "ImageClassification-CNN-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -571,7 +571,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		556D1CDD20BBA9FA0070537C /* Build configuration list for PBXProject "ImageClassification-CoreML" */ = {
+		556D1CDD20BBA9FA0070537C /* Build configuration list for PBXProject "ImageClassification-CNN-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556D1CFD20BBA9FC0070537C /* Debug */,
@@ -580,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		556D1CFF20BBA9FC0070537C /* Build configuration list for PBXNativeTarget "ImageClassification-CoreML" */ = {
+		556D1CFF20BBA9FC0070537C /* Build configuration list for PBXNativeTarget "ImageClassification-CNN-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556D1D0020BBA9FC0070537C /* Debug */,
@@ -589,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		556D1D0220BBA9FC0070537C /* Build configuration list for PBXNativeTarget "ImageClassification-CoreMLUITests" */ = {
+		556D1D0220BBA9FC0070537C /* Build configuration list for PBXNativeTarget "ImageClassification-CNN-iOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				556D1D0320BBA9FC0070537C /* Debug */,
