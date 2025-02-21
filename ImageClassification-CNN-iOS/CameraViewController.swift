@@ -356,39 +356,30 @@ extension CameraViewController: MeasureMentDelegate {
 
     }
 
+    /// 카메라로 인식한 물체가 어떤 물체인지에 대한 결과 값을 계산하는 함수 입니다.
     func calculateAccuracy(results: [VNClassificationObservation]) {
-        // Top-1 결과 추출
         guard let top1Result = results.first else {
             showFailResult()
             return
         }
 
-        // Top-5 결과 추출 (상위 5개 결과를 그대로 추출)
         let top5Results = results.prefix(5)
+        let groundTruthLabel = pickerResult
 
-        // 실제 레이블과 비교하여 정확도 계산 (여기서는 예시로 "정답" 클래스를 직접 정의, 실제 데이터셋에 따라 다름)
-        let groundTruthLabel = pickerResult // 실제 정답 레이블
-
-        // Top-1이 정답과 일치하는지 확인
         let top1Correct = top1Result.identifier == groundTruthLabel
-
-        // Top-5 중 정답이 있는지 확인
         let top5Correct = top5Results.contains { $0.identifier == groundTruthLabel }
 
-        // UI 업데이트
         DispatchQueue.main.sync {
             self.toplabelLabel.text = (groundTruthLabel ?? "monitor")
             self.objectLabel.text = top1Result.identifier
             self.confidenceLabel.text = "\(round(top1Result.confidence * 100))%"
 
-            // Top-1 결과 UI 업데이트
             if top1Correct {
                 self.top1Label.text = "Top-1: \(top1Result.identifier) \(round(top1Result.confidence * 100))%"
             } else {
                 self.top1Label.text = "Top-1: Incorrect"
             }
 
-            // Top-5 결과 문자열 생성
             let top5Text = top5Results.map { result in
                 return "\(result.identifier) \(round(result.confidence * 100))%"
             }.joined(separator: "\n")

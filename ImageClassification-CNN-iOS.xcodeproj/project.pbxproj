@@ -14,6 +14,7 @@
 		556D1CFB20BBA9FC0070537C /* ImageClassification-CoreMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D1CFA20BBA9FC0070537C /* ImageClassification-CoreMLUITests.swift */; };
 		556D1D0820BBABCC0070537C /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D1D0720BBABCC0070537C /* VideoCapture.swift */; };
 		55DF3E7321972FBF0080252C /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 55DF3E7221972FBF0080252C /* MobileNet.mlmodel */; };
+		6515B1FF2D5C641000F3CE15 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6515B1FE2D5C641000F3CE15 /* Documentation.docc */; };
 		65FEC83A2CB0FEDF0071ED78 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 65FEC8392CB0FEDF0071ED78 /* SnapKit */; };
 		65FEC8462CB1040A0071ED78 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FEC8452CB1040A0071ED78 /* CameraViewController.swift */; };
 		65FEC8482CB1232D0071ED78 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FEC8472CB1232D0071ED78 /* ImageViewController.swift */; };
@@ -77,6 +78,7 @@
 		556D1CFC20BBA9FC0070537C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556D1D0720BBABCC0070537C /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		55DF3E7221972FBF0080252C /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		6515B1FE2D5C641000F3CE15 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		65FEC8452CB1040A0071ED78 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		65FEC8472CB1232D0071ED78 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		65FEC8492CB13FD90071ED78 /* mobilenetV3_large.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mobilenetV3_large.mlmodel; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				556D1CEC20BBA9FC0070537C /* Assets.xcassets */,
 				556D1CEE20BBA9FC0070537C /* LaunchScreen.storyboard */,
 				556D1CF120BBA9FC0070537C /* Info.plist */,
+				6515B1FE2D5C641000F3CE15 /* Documentation.docc */,
 			);
 			path = "ImageClassification-CNN-iOS";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				71B831F622E2A20200207D05 /* MobileNetV2.mlmodel in Sources */,
 				55DF3E7321972FBF0080252C /* MobileNet.mlmodel in Sources */,
 				71B831F522E2A20200207D05 /* MobileNetV2Int8LUT.mlmodel in Sources */,
+				6515B1FF2D5C641000F3CE15 /* Documentation.docc in Sources */,
 				65FEC8462CB1040A0071ED78 /* CameraViewController.swift in Sources */,
 				71B8320722E2A5E000207D05 /* SqueezeNet.mlmodel in Sources */,
 				71B831F722E2A20200207D05 /* MobileNetV2FP16.mlmodel in Sources */,
@@ -377,7 +381,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -408,7 +412,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -437,7 +441,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -468,7 +472,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -492,6 +496,12 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = P9S7UH52Q5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ImageClassification-CNN-iOS",
+					"$(PROJECT_DIR)/ImageClassification-CNN-iOS/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "ImageClassification-CNN-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -513,6 +523,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NK4L45774;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ImageClassification-CNN-iOS",
+					"$(PROJECT_DIR)/ImageClassification-CNN-iOS/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "ImageClassification-CNN-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (

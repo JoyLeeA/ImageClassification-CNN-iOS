@@ -12,85 +12,9 @@ protocol MeasureMentDelegate {
     func updateMeasure(inferenceTime: Double, executionTime: Double, fps: Int)
 }
 
-//final class MeasureMent {
-//    var delegate: MeasureMentDelegate?
-//    var index: Int = -1
-//    var measurements: [Dictionary<String, Double>]
-//    
-//    init() {
-//        let measurement = [
-//            "start": CACurrentMediaTime(),
-//            "end": CACurrentMediaTime()
-//        ]
-//        measurements = Array<Dictionary<String, Double>>(repeating: measurement, count: 30)
-//    }
-//
-//    func startCamera() {
-//        index += 1
-//        index %= 30
-//        measurements[index] = [:]
-//        labeling(for: index, with: "start")
-//    }
-//
-//    func stopCamera() {
-//        labeling(for: index, with: "end")
-//        let beforeMeasurement = getBeforeMeasurment(for: index)
-//        let currentMeasurement = measurements[index]
-//        guard
-//            let startTime = currentMeasurement["start"],
-//            let endInferenceTime = currentMeasurement["endInference"],
-//            let endTime = currentMeasurement["end"],
-//            let beforeStartTime = beforeMeasurement["start"]
-//        else {
-//            return
-//        }
-//        delegate?.updateMeasure(inferenceTime: endInferenceTime - startTime,
-//                                executionTime: endTime - startTime,
-//                                fps: Int(1/(startTime - beforeStartTime)))
-//
-//    }
-//
-//    func stopCamera2() {
-//        // "endInference" 값을 기록
-//        labeling(for: index, with: "endInference")
-//
-//        let beforeMeasurement = getBeforeMeasurment(for: index)
-//        let currentMeasurement = measurements[index]
-//
-//        guard
-//            let startTime = currentMeasurement["start"],
-//            let endInferenceTime = currentMeasurement["endInference"],
-//            let endTime = currentMeasurement["end"],
-//            let beforeStartTime = beforeMeasurement["start"]
-//        else {
-//            return
-//        }
-//
-//        // updateMeasure 호출
-//        delegate?.updateMeasure(inferenceTime: endInferenceTime - startTime,
-//                                executionTime: endTime - startTime,
-//                                fps: Int(1 / (startTime - beforeStartTime)))
-//    }
-//
-//
-//    func labeling(with msg: String? = "") {
-//        labeling(for: index, with: msg)
-//    }
-//    
-//    private func labeling(for index: Int, with msg: String? = "") {
-//        if let message = msg {
-//            measurements[index][message] = CACurrentMediaTime()
-//        }
-//    }
-//    
-//    private func getBeforeMeasurment(for index: Int) -> Dictionary<String, Double> {
-//        return measurements[(index + 30 - 1) % 30]
-//    }
-//}
-
 final class MeasureMent {
     var delegate: MeasureMentDelegate?
-    var index: Int = 0 // 처음 시작할 때 0으로 설정
+    var index: Int = 0
     var measurements: [Dictionary<String, Double>]
 
     init() {
@@ -102,8 +26,8 @@ final class MeasureMent {
     }
 
     func startCamera() {
-        index = (index + 1) % 30 // index 범위가 0에서 29를 넘지 않도록 순환
-        measurements[index] = [:] // 새로운 측정을 위해 초기화
+        index = (index + 1) % 30
+        measurements[index] = [:]
         labeling(for: index, with: "start")
     }
 

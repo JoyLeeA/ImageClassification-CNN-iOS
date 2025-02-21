@@ -1,0 +1,11 @@
+@Tutorials(name: "ImageClassfication-CNN-iOS") {
+    @Intro(title: "CNN모델 성능 측정기") {
+        iOS 디바이스 환경에서 CNN모델의 성능을 측정한다.
+        @Image(source: "Intro.png", alt: "Intro")
+    }
+    
+    @Chapter(name: "모델 변경 방법") {
+        @Image(source: "default.png", alt: "default")
+        @TutorialReference(tutorial: "doc:step-1")
+    }
+}
